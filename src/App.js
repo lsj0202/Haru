@@ -1,15 +1,24 @@
+import React, { useState } from 'react';
 import Navbar from './Components/Navbar';
-import { GiHamburgerMenu } from 'react-icons/gi';
+import { RxHamburgerMenu } from 'react-icons/rx';
 import './App.css';
 
+
 const App = () => {
+  const [showNav, setShowNav] = useState(false);
+
+  const change = () => {
+    setShowNav(!showNav);
+    
+  }
+
   return (
     <div className='App'>
       <header>
-        <GiHamburgerMenu />
+        <RxHamburgerMenu onClick={() => setShowNav(!showNav)}/>
       </header>
 
-      <Navbar />
+      <Navbar show={showNav}/>
     </div>
   );
 }
