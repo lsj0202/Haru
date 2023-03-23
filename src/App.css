@@ -21,7 +21,7 @@ header{
   height: 85.1vh;
   padding: 0 30px;
   left: -100%;
-  transition: all 0.7s ease-in-out;
+  transition: all 0.25s ease-in-out;
   z-index: 3;
 }
 .sidenav.active{
@@ -36,14 +36,7 @@ header{
 
 .logo{
   padding-left: 15px;
-  width: 50px; 
-  transition: all 0.7s ease-in-out;
-}
-
-.log2{
-  padding-left: 15px;
-  width: 30px; 
-  transition: all 0.7s ease-in-out;
+  width: 50px;
 }
 
 .logo__text{
@@ -75,6 +68,7 @@ ul li a{
 
 ul li a:hover,
 ul li a:active{
+  transition: all 0.3s ease-in-out;
   background-color: #172b4d;
 }
 
