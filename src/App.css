@@ -21,7 +21,7 @@ header{
   height: 85.1vh;
   padding: 0 30px;
   left: -100%;
-  transition: all 0.25s ease-in-out;
+  transition: all 0.3s ease-in-out;
   z-index: 3;
 }
 .sidenav.active{
