@@ -21,14 +21,31 @@ header{
   height: 85.1vh;
   padding: 0 30px;
   left: -100%;
-  transition: all 1s;
+  transition: all 0.7s ease-in-out;
+  z-index: 3;
 }
 .sidenav.active{
   left: 0;
 }
 
+.logo__main{
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+}
+
 .logo{
-  width: 100px; 
+  padding-left: 15px;
+  width: 50px; 
+}
+
+.logo__text{
+  margin-left: 7px;
+  font-weight: 600;
+}
+
+.banner{
+  margin-top: 50px;
 }
 
 ul{
@@ -52,4 +69,8 @@ ul li a{
 ul li a:hover,
 ul li a:active{
   background-color: #172b4d;
+}
+
+header svg{
+  font-size: 40px;
 }

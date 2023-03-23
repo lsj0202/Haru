@@ -1,11 +1,13 @@
-import Logo from './lab.png';
+import Music from './Images/music.png';
 import '../App.css'
 
-const Navbar = () => {
+const Navbar = ({show}) => {
   return(
-    <div className="sidenav active">
-      <img src={Logo} alt="Logo" className='logo'/>
-      <ul>
+    <div className={show ? 'sidenav active' : 'sidenav'}>
+      <div className="logo__main">
+        <img src={Music} alt="Logo" className='logo'/><span className='logo__text'> Music</span>
+      </div>
+      <ul className="banner">
         <li>
           <a href="/">Home</a>
         </li>
