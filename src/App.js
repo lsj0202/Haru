@@ -18,7 +18,7 @@ const App = () => {
       setTimeout(() => {
         setImageSrc(X);
         setShowNav(true);
-      }, 200);
+      }, 250);
     }
   }
 
