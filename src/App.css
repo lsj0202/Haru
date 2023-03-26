@@ -8,18 +8,21 @@ body{
   color: #eaecef;
 }
 
-header{
+.header{
   padding: 30px;
-  background-color: #011627;
-  height: 50px;
-  border-bottom: 1px solid white;
+  background-color: #7e7e7e;
+  height: 20px;
+  border-bottom: 0.1px solid white;
+  background-image: linear-gradient(to right,rgb(97, 99, 104),rgb(69, 71, 76),rgb(52, 52, 55));
+  display: flex;
+  align-items: center;
 }
 
 .sidenav{
   width: 240px;
-  background-color: #011627;
+  background-image: linear-gradient(to right,rgb(97, 99, 104),rgb(69, 71, 76),rgb(52, 52, 55));
   position: absolute;
-  height: 85.1vh;
+  height: 89.2vh;
   padding: 0 30px;
   left: -100%;
   transition: all 0.3s ease-in-out;
@@ -37,8 +40,14 @@ header{
 }
 
 .logo{
-  padding-left: 15px;
-  width: 50px;
+  padding-left: 10px;
+  width: 40px;
+  cursor: pointer;
+}
+.logo:active{
+  border-radius: 50%;
+  background-color: rgb(127, 127, 127);
+  transition: 0.02s all ease-in-out;
 }
 
 .logo__text{
@@ -71,9 +80,47 @@ ul li a{
 ul li a:hover,
 ul li a:active{
   transition: all 0.3s ease-in-out;
-  background-color: #172b4d;
+  background-image: linear-gradient(to right,rgb(97, 99, 104),rgb(69, 71, 76));
+  color: rgb(207, 207, 207);
+  font-size: 18px;
 }
 
 header svg{
   font-size: 40px;
+}
+
+.header_in{
+  width: 90%;
+  height: 70px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 39px;
+}
+
+.mainLogo{
+  width: 70px;
+  height: 70px;
+}
+
+.rigth{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.pointer{
+  cursor: pointer;
+}
+
+.mainBanner{
+  width: 100%;
+  height: 100px;
+}
+
+.pic01{
+  width: 100%;
+  height: 400px;
+  background-size: cover;
 }
