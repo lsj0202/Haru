@@ -10,7 +10,7 @@ function TodoLIst() {
 
   const [contents, setContents] = useState([]);
   const [but, setBut] = useState('');
-  const [number, setNumber] = useState(4);
+  const [number, setNumber] = useState(0);
 
   const onChange = (e) => {
     setBut(e.target.value);

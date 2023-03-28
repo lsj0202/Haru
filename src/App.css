@@ -170,19 +170,22 @@ header svg{
   width: 500px;
 }
 .input{
-  flex: 8;
-  width: 500px;
+  flex: 10;
+  width: 800px;
+  height: 30px;
   padding: 5px;
   margin-right: 10px;
   border-radius: 3px;
-  border: 0.1px solid gray;
+  border: 0.1px solid rgb(224, 224, 224);
 }
 .btn{
   flex: 2;
-  padding: 7px;
+  padding: 0 20px 0 20px;
   line-height: 1;
   border-radius: 3px;
   border: 0.1px solid gray;
+  border: 0.1px solid rgb(224, 224, 224);
+  height: 45px;
 }
 .btn2{
   border-radius: 50%;
@@ -200,4 +203,5 @@ header svg{
 
 .center{
   margin-bottom: 50px;
+  color:rgb(52, 52, 55);
 }
