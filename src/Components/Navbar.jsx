@@ -18,6 +18,9 @@ const Navbar = ({show}) => {
         <li>
           <Link to='/study'>Study Timer</Link>
         </li>
+        <li>
+          <Link to='/'>Home</Link>
+        </li>
       </ul>
     </div>
   )
