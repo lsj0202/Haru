@@ -6,7 +6,7 @@ function TodoLIst() {
 
   useEffect(() => {
     inputRef.current.focus();
-  })
+  });
 
   const [contents, setContents] = useState([]);
   const [but, setBut] = useState('');
@@ -33,7 +33,7 @@ function TodoLIst() {
 
   const contentsList = contents.map((cont) => 
     <li className="matop" key={cont.id}>
-      <span>{cont.text}</span> {/* listName */}
+      <span className="left">{cont.id+1}. {cont.text}</span> {/* listName */}
       <button className="btn2" onClick={() => {del(cont.id)}}>X</button>  {/* button */}
     </li>
   );

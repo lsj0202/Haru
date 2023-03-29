@@ -1,12 +1,14 @@
 import Music from './Images/music.png';
 import '../App.css'
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 const Navbar = ({show}) => {
+  let navigate = useNavigate();
+
   return(
     <div className={show ? 'sidenav active' : 'sidenav'}>
-      <div className="logo__main">
-        <img src={Music} alt="Logo" className='logo'/><span className='logo__text'> 하루하루</span>
+      <div className="logo__main" onClick={() => { navigate(-1) }}>
+        <img src={Music} alt="Logo" className='logo'/><span className='logo__text'>이전 페이지</span>
       </div>
       
       <ul className="banner">
