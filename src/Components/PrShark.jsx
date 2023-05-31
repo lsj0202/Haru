@@ -5,4 +5,4 @@ export default function PrShark() {
     <div>PrShark</div>
   )
 }
-git
+git add . 
